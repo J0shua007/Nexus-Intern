@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <!-- style sheet -->
+        <link rel="stylesheet" href="style.css">
+        <!-- icon  -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- animation -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!-- bootstrap 5.1.3 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Space+Mono&display=swap"
+            rel="stylesheet">
+
+    </head>
+    <body class="">
+        <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dark" onclick="dark()">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+        <div class="container1">
+            <!-- navbar -->
+            <nav class="navi animate__animated animate__fadeIn animate__delay-1s ">
+                <!-- profile -->
+                <a href="index.html">
+                    <div
+                        class="profile  animate__animated animate__bounceInLeft animate__delay-2s">
+                        <img src="img/Joshua.jpg" width="40px" height="40px">
+                        <div class="profcont">
+                            <span>JOSHUA EDWIN I</span><br>
+                            <span style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                                ijoshuaedwin54@gmail.com</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- icons -->
+                <div
+                    class="social_icons animate__animated animate__bounceInLeft animate__delay-2s ">
+                    <a href="https://github.com/J0shua007" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/i-joshua-edwin/"
+                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:ijoshuaedwin54@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <!-- menus -->
+                <div class="menus">
+                    <a href="#box1">
+                        <div
+                            class="animate__animated animate__bounceInLeft animate__delay-2s "><i
+                                class="fa-solid fa-house"></i>
+                            <div class="text">HOME</div>
+                        </div></a>
+
+                    <a href="#box2">
+                        <div
+                            class="animate__animated animate__bounceInLeft  animate__delay-2s "><i
+                                class="fa-solid fa-user"></i>
+                            <div class="text">ABOUT</div>
+                        </div>
+                    </a>
+                    <a href="#box3">
+                        <div
+                            class="animate__animated animate__bounceInLeft  animate__delay-2s "><i
+                                class="fa-solid fa-computer"></i>
+                            <div class="text"> SKILLS</div>
+                        </div>
+                    </a>
+                    <a href="#box4">
+                        <div
+                            class="animate__animated animate__bounceInLeft  animate__delay-2s "><i
+                                class="fa-solid fa-folder-open"></i>
+                            <div class="text">PROJECTS</div>
+                        </div>
+                    </a>
+                    <a href="#box5">
+                        <div
+                            class="animate__animated animate__bounceInLeft  animate__delay-2s "><i
+                                class="fa-solid fa-address-book"></i>
+                            <div class="text">CONTACT</div>
+                        </div>
+                    </a>
+                </div>
+                <!-- logout -->
+                <div
+                    class=" animate__animated animate__bounceInLeft  animate__delay-2s">
+                    <div class="logout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <div class="log">Logout</div>
+                    </div>
+                </div>
+            </nav>
+            <!-- box 1 -->
+            <div class="home container-fluid" id="box1">
+                <div class="row row1">
+                    <div
+                        class=" col col-lg-6 row1col1 animate__animated animate__bounceInDown">
+                        <div>
+                            Hi, I'm<br>
+                            JOSHUA EDWIN.I<br>
+                            <span id="animated"></span>
+                            <div class="row1col1col" >
+                                <a href="JOSHUA EDWIN resume.pdf" target="_blank"> 
+                                    <button id="resumeBtn">Download CV <span><i class="fa-solid fa-circle-down"></i></span></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class=" col col-lg-6 row1col2 animate__animated animate__bounceInDown ">
+                        <img class="userimg" src="img/user.jpg" width="320px"
+                            height="320px">
+                    </div>
+                </div>
+            </div>
+
+            <!-- box 2 -->
+            <div class="about container" id="box2">
+                <div class="row row2">
+                    <span class="row2div1 animate__animated animate__backInDown">ABOUT
+                        ME</span>
+                    <div class="col-lg-5 offset-lg-1 mt-4 row2div2 animate__animated animate__backInLeft ">
+                        <p>
+                            "Hi, I'm Joshua Edwin, a 22-year-old Computer
+                            Science graduate from Bishop Heber College. During
+                            my 6-month internship at Helloleads CRM in Trichy, I
+                            gained skills in HTML, CSS, Bootstrap 5, jQuery,
+                            JavaScript, PHP, Python, and MySQL. Currently, I'm
+                            learning ReactJS to expand my abilities. I'm
+                            interested in full-stack development, PHP,
+                            cybersecurity, and data analysis. I have a strong
+                            foundation in web development and
+                            am enthusiastic about expanding my expertise in
+                            ReactJS."
+                        </p>
+                    </div>
+                    <div class="col-lg-5 row2div3 mt-4 animate__animated animate__backInRight">
+                        <p>
+                            I thrive on tackling challenges with creativity and
+                            adaptability, seeking innovative solutions to
+                            complex problems. My keen interest in cybersecurity
+                            and data analysis reflects my commitment to staying
+                            at the forefront of technology trends and ensuring
+                            the security and integrity of digital systems.
+                            Beyond the realm of technology, I find joy in
+                            exploring the virtual worlds of video games,
+                            immersing myself in their intricacies and strategic
+                            challenges. Additionally, my love for diverse music
+                            genres serves as a creative outlet, providing a
+                            balance to the analytical aspects of my work
+                        </p>
+                    </div>
+                    <div class="col-12 row2div4" >
+                        <a href="JOSHUA EDWIN resume.pdf" target="_blank"> 
+                            <button id="resumeBtn">Download CV <span><i class="fa-solid fa-circle-down"></i></span></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- box 3 -->
+            <div class="skills container" id="box3">
+                <div class="row row3">
+                    <h1 class="row3span animate__animated animate__backInDown">EDUCATION</h1>
+                    <div class="col-lg-5 mt-3 row3divs animate__animated animate__backInLeft">
+                        <div class="text-center  mt-2">
+                            <h1><span id="logos"><i class="fa-solid fa-book"></i></span>10th Standard</h1>
+                            <p>Passed With 81%</p>
+                            <p>Studied In Punitha Amala
+                                Annai.Matriculation Higher.Secondary School,Vellakovil</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 mt-3 row3divs offset-lg-2 animate__animated animate__backInRight">
+                        <div class="text-center  mt-2">
+                            <h1><span id="logos"><i class="fa-solid fa-book"></i></span>12th Standard</h1>
+                            <p>Passed With 72%</p>
+                            <p>Studied In Government Higher Secondary School,Kangeyam</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mt-3 row3divs  animate__animated animate__backInLeft ">
+                        <div class="text-center  mt-2 " >
+                            <h1><span id="logos"><i class="fa-solid fa-user-graduate"></i></span>B.Sc.Computer Science</h1>
+                            <p>Passed With 78%</p>
+                            <p>Graduated In Bishop Heber College, Trichy</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 mt-3  row3divs offset-lg-2  animate__animated animate__backInRight">
+                        <div class="text-center mt-2">
+                            <h1><span id="logos"><i class="fa-solid fa-briefcase"></i></span>Internship</h1>
+                            <p>Website Developer</p>
+                            <p>I have developed five websites for this Company</p>
+                            <p>HelloLeads CRM, Trichy</p>
+                        </div>
+                    </div>
+
+                    <h1 class="row3span mt-4 animate__animated animate__backInDown">SKILLS</h1>
+
+                    <div class="col-12 d-flex flex-wrap justify-content-around align-items-start">
+                        <div class="icons animate__animated animate__backInLeft">
+                            <img src="img/icons/html.png">
+                        </div>
+                        <div class="icons animate__animated animate__backInRight">
+                            <img src="img/icons/css.png">
+                        </div>
+                        <div class="icons animate__animated animate__backInLeft">
+                            <img src="img/icons/bootstrap.jfif">
+                        </div>
+                        <div class="icons animate__animated animate__backInRight">
+                            <img src="img/icons/jquery.png">
+                        </div>
+                        <div class="icons animate__animated animate__backInLeft">
+                            <img src="img/icons/js.png">
+                        </div>
+                        <div class="icons animate__animated animate__backInRight">
+                            <img src="img/icons/php.png">
+                        </div>
+                        <div class="icons animate__animated animate__backInLeft">
+                            <img src="img/icons/sql.png">
+                        </div>
+                        <div class="icons animate__animated animate__backInRight">
+                            <img src="img/icons/java.png">
+                        </div>
+                        <div class="icons animate__animated animate__backInRight">
+                            <img src="img/icons/pythonn.jfif">
+                        </div>
+                    </div>
+                    
+                    <div class="col-12" style="height: 100px;">
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- box 4 -->
+            <div class="projects container" id="box4">
+               <div class="row row4">
+                <h1 class="row3span animate__animated animate__backInDown">PROJECTS</h1>
+                <div class="col-12 d-flex flex-wrap justify-content-around">
+
+                    <!-- card1 -->
+                    <div class="card animate__animated animate__backInLeft" style="width:300px; margin-top: 20px; height: 350px;">
+                        <img class="card-img-top" src="img/portfolio.png" alt="Card image" style="width:100%;height: 150px;">
+                        <div class="card-body">
+                          <h4 class="card-title">Portfolio</h4>
+                          <p class="card-text">It was developed using HTML CSS,JS and Bootstrap5</p>
+                          <a href="https://github.com/J0shua007/Portfolio" target="_blank" class="btn bg-black text-white">Github</a>
+                          <a href="https://j0shua007.github.io/Portfolio/" target="_blank" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- card2 -->
+                    <div class="card animate__animated animate__backInRight" style="width:300px ; margin-top: 20px ; height: 350px;">
+                        <img class="card-img-top" src="img/calculator.png" alt="Card image" style="width:100%;height: 150px;">
+                        <div class="card-body">
+                          <h4 class="card-title">Calculator</h4>
+                          <p class="card-text">It was developed using HTML CSS and JS</p>
+                          <a href="https://github.com/J0shua007/calculator" target="_blank" class="btn bg-black text-white">Github</a>
+                          <a href="https://j0shua007.github.io/calculator/" target="_blank" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- card3 -->
+                    <div class="card animate__animated animate__backInLeft" style="width:300px ; margin-top: 20px; height: 350px;">
+                        <img class="card-img-top" src="img/cash Splitter.png" alt="Card image" style="width:100%;height: 150px;">
+                        <div class="card-body">
+                          <h4 class="card-title">Cash Splitter</h4>
+                          <p class="card-text">It was developed using HTML CSS and JS</p>
+                          <a href="https://github.com/J0shua007/Cash-splitter" target="_blank" class="btn bg-black text-white">Github</a>
+                          <a href="https://j0shua007.github.io/Cash-splitter/" target="_blank" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- card4 -->
+                    <div class="card animate__animated animate__backInRight" style="width:300px ; margin-top: 20px; height: 350px;">
+                        <img class="card-img-top" src="img/clock.png" alt="Card image" style="width:100%;height: 150px;">
+                        <div class="card-body">
+                          <h4 class="card-title">Digital Clock</h4>
+                          <p class="card-text">It was developed using HTML CSS and JS</p>
+                          <a href="https://github.com/J0shua007/clock" target="_blank" class="btn bg-black text-white">Github</a>
+                          <a href="https://j0shua007.github.io/clock/" target="_blank" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- card5 -->
+                    <div class="card animate__animated animate__backInLeft" style="width:300px ; margin-top: 20px; height: 350px;">
+                        <img class="card-img-top" src="img/footer.png" alt="Card image" style="width:100%;height: 150px;">
+                        <div class="card-body">
+                          <h4 class="card-title">Responsive Footer</h4>
+                          <p class="card-text">It was developed using HTML CSS and JS</p>
+                          <a href="https://github.com/J0shua007/Resp-Footer" target="_blank" class="btn bg-black text-white">Github</a>
+                          <a href="https://j0shua007.github.io/Resp-Footer/" target="_blank" class="btn btn-primary">Live Demo</a>   
+                        </div>
+                    </div>
+
+                    <!-- card6 -->
+                    <div class="card animate__animated animate__backInRight" style="width:300px ; margin-top: 20px; height: 350px;">
+                        <img class="card-img-top" src="img/todolist.png" alt="Card image" style="width:100%;height: 150px;">
+                        <div class="card-body">
+                          <h4 class="card-title">To-Do-List</h4>
+                          <p class="card-text">It was developed using HTML CSS and JS</p>
+                          <a href="https://github.com/J0shua007/To-Do-List" target="_blank" class="btn bg-black text-white">Github</a>
+                          <a href="https://j0shua007.github.io/To-Do-List/" target="_blank" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- card7 -->
+                    <div class="card animate__animated animate__backInLeft" style="width:300px ; margin-top: 20px; height: 350px;">
+                        <img class="card-img-top" src="img/room Booking.png" alt="Card image" style="width:100%;height: 150px;">
+                        <div class="card-body">
+                          <h4 class="card-title">Room Booking Website</h4>
+                          <p class="card-text">It was developed using HTML CSS and JS</p>
+                          <a href="https://github.com/J0shua007/Room-Booking-site" target="_blank" class="btn bg-black text-white">Github</a>
+                          <a href="https://j0shua007.github.io/Room-Booking-site/index.html" target="_blank" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- card-8 -->
+                    <div class="card animate__animated animate__backInRight" style="width:300px ; margin-top: 20px; height: 350px;">
+                        <img class="card-img-top" src="img/otp.png" alt="Card image" style="width:100%;height: 150px;">
+                        <div class="card-body">
+                          <h4 class="card-title">OTP Generator</h4>
+                          <p class="card-text">It was developed using HTML CSS and JS</p>
+                          <a href="https://github.com/J0shua007/Otp-Generator" target="_blank" class="btn bg-black text-white">Github</a>
+                          <a href="https://j0shua007.github.io/Otp-Generator/" target="_blank" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <!-- card-9 -->
+                    <div class="card animate__animated animate__backInLeft" style="width:300px ; margin-top: 20px; height: 350px;">
+                        <img class="card-img-top" src="img/bmi.png" alt="Card image" style="width:100%;height: 150px;">
+                        <div class="card-body">
+                          <h4 class="card-title">BMI Calculator</h4>
+                          <p class="card-text">It was developed using HTML CSS and JS</p>
+                          <a href="https://github.com/J0shua007/BMI-Calculator" target="_blank" class="btn bg-black text-white">Github</a>
+                          <a href="https://j0shua007.github.io/BMI-Calculator/" target="_blank" class="btn btn-primary">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 row2div4" >
+                    <a href="JOSHUA EDWIN resume.pdf" target="_blank"> 
+                        <button id="resumeBtn">Download CV <span><i class="fa-solid fa-circle-down"></i></span></button>
+                    </a>
+                </div>
+               </div>
+            </div>
+
+            <!-- box 5 -->
+            <div class="contact container" id="box5">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="row3span animate__animated animate__backInDown">CONTACTS</h1>
+                    </div>
+                    <div class="col-lg-5  findmec animate__animated animate__backInRight d-flex justify-content-around">
+                        <div class=" findme bg-danger">
+                            <h1 class="text-center text-white">FIND ME</h1>
+                            <p class="text-center text-white p-2">
+                                I am always in online.if you want to chat with me and if you want find me use this links given below.
+                            </p>
+                            <ul class="ul">
+                                <li class="links">Github   : <a href="https://github.com/J0shua007" target="_blank">Click link</a></li>
+                                <li class="links">Linkedin : <a href="https://www.linkedin.com/in/i-joshua-edwin/" target="_blank">Click link</a></li>
+                                <li class="links">Email    : <a href="mailto:ijoshuaedwin55@gmail.com">Click link</a></li>
+                            </ul>
+                            <img src="img/cantactme.jfif" width="320px" height="200px" class="contactme">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 animate__animated animate__backInLeft">
+                        <form  action="#">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">User Name :</label>
+                                <input type="text" class="form-control" id="name" placeholder="John Doe">
+                            </div>
+                            <div class="mb-3 ">
+                                <label for="email" class="form-label">Email :</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+                            <div class="mb-3 ">
+                              <label for="description" class="form-label">Description</label>
+                              <textarea class="form-control" id="description" rows="5" placeholder="Give your words...."></textarea>
+                            </div>
+                            <div class="mb-3 d-flex justify-content-end">
+                                <button class="btn btn-success me-2" type="submit">Submit</button>
+                                <button class="btn btn-danger" type="reset">Reset</button>
+                              </div>
+
+                        </form>
+                    </div>
+                    <div class="col-12 text-center d-flex align-items-center justify-content-around" style="height: 150px;">
+                        <p style="color: var(--color);" >&#169 Created by <span style="color:var(--header-color)">Joshua Edwin</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        
+        </div> 
+
+        <script src="script.js"></script>
+    </body>
+</html>
