@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Space+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:rgb(204, 204, 204);
+    --color:rgb(0, 0, 0);
+}
+
+.dark{
+    --bg-color:rgb(39, 39, 38);
+    --color : white;
+}
+.home , .models, .contact{
+    width: 100%;
+    height: 100vh;
+}
+.about {
+    width: 100%;
+    height: 100%;
+}
+
+.home{
+    background: rgba(0, 0, 0, 0.7)url("img/laptop1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: darken;   
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    background-color: var(--bg-color);
+    display: grid;
+    justify-content:center;
+}
+aside{
+    width: 80px;
+    background-color:transparent;
+    height: 98vh; 
+    margin: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+aside>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+aside>div>a{
+    text-decoration: none;
+}
+aside>div>a>i{
+    margin:20px 10px;
+    color: white;
+    font-size: 20px;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+nav>a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 22px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+.icon{
+    position: absolute;
+    right: 10px;
+    top:20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.icons:hover{
+    color: red;   
+}
+.fa-solid{
+    font-size: 20px;
+    color: white;
+    float: right;
+}
+.header::first-letter{
+    font-size: 120px;
+}
+.header1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(248, 248, 248);
+    -webkit-text-stroke: 2px;
+    line-height: 10px;
+}
+
+.header{
+    height: 120px;
+    position: relative;
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(226, 39, 39);
+    -webkit-text-stroke: 5px;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+    transition: ease  0.1s;
+}
+.modals-list{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.card{
+    box-shadow: 0px 0px 0px rgb(41, 40, 40);
+    transition: all 0.6s;
+}
+.card:hover{
+    transform: scale(1.04);
+}
+.models{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+}
+.aboutmecont{
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.aboutme{
+    color: var(--color);
+    font-size: 72px;
+    -webkit-text-stroke: 3px;
+}
+.para{
+    color: var(--color);
+    font-size: 18px;
+    text-align: justify;
+}
+
+.modals-list{
+    padding-top: 100px;
+}
+.contact{
+    padding-top: 100px;
+    background-color: var(--bg-color);
+    color: var(--color);
+}
+#contactus{
+    width: 600px;
+}
+.contimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#copyright{
+    color: var(--color)  ;
+}
